@@ -1,0 +1,13 @@
+CRITICAL - 2022-11-09 05:23:40 --> Undefined variable $target
+in APPPATH/Views/admin/default.php on line 13.
+ 1 APPPATH/Views/admin/default.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/default.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Categories.php(40): view()
+ 7 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Categories->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

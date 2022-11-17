@@ -1,0 +1,69 @@
+ERROR - 2022-10-09 08:16:21 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/mhrownaghi/Projects/codeigniter/blog/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mhrownaghi/Projects/codeigniter/blog/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mhrownaghi/Projects/codeigniter/blog/system/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique()
+#6 /home/mhrownaghi/Projects/codeigniter/blog/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#7 /home/mhrownaghi/Projects/codeigniter/blog/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /home/mhrownaghi/Projects/codeigniter/blog/app/Controllers/Install.php(15): CodeIgniter\Controller->validate()
+#9 /home/mhrownaghi/Projects/codeigniter/blog/system/CodeIgniter.php(902): App\Controllers\Install->create()
+#10 /home/mhrownaghi/Projects/codeigniter/blog/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#11 /home/mhrownaghi/Projects/codeigniter/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/mhrownaghi/Projects/codeigniter/blog/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/mhrownaghi/Projects/codeigniter/blog/system/Commands/Server/rewrite.php(46): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/mhrownaghi/Projects/codeigniter/blog/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mhrownaghi/Projects/codeigniter/blog/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mhrownaghi/Projects/codeigniter/blog/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/mhrownaghi/Projects/codeigniter/blog/system/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique()
+#5 /home/mhrownaghi/Projects/codeigniter/blog/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#6 /home/mhrownaghi/Projects/codeigniter/blog/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /home/mhrownaghi/Projects/codeigniter/blog/app/Controllers/Install.php(15): CodeIgniter\Controller->validate()
+#8 /home/mhrownaghi/Projects/codeigniter/blog/system/CodeIgniter.php(902): App\Controllers\Install->create()
+#9 /home/mhrownaghi/Projects/codeigniter/blog/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /home/mhrownaghi/Projects/codeigniter/blog/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mhrownaghi/Projects/codeigniter/blog/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /home/mhrownaghi/Projects/codeigniter/blog/system/Commands/Server/rewrite.php(46): require_once('...')
+#13 {main}
+CRITICAL - 2022-10-09 08:16:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique()
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Install.php(15): CodeIgniter\Controller->validate()
+ 8 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Install->create()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-09 09:48:29 --> Cannot use object of type App\Models\UserModel as array
+in APPPATH/Controllers/Login.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Login->auth()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-09 22:06:57 --> App\Controllers\Install::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH/Controllers/Install.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\Install->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-09 22:53:04 --> Class "Config\App\Filters\Auth" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
